@@ -1,105 +1,85 @@
-# 📊 DecodeLabs SQL Project 3 --- E-Commerce Sales Analysis
+# 📊 DecodeLabs SQL Project 3
 
-## Overview
+**E-Commerce Sales Analysis using PostgreSQL**
 
-This project is part of the **DecodeLabs SQL Series (Project 3)**. The
-objective was to analyze an e-commerce orders dataset using
-**PostgreSQL** and answer real business questions through SQL queries.
+## 📌 Overview
 
-## Dataset
+This project analyzes an e-commerce orders dataset using SQL to generate business insights. It demonstrates practical SQL skills including aggregation, filtering, sorting, and KPI analysis.
 
-**Table:** `orders`
+## 🛠 Tools
 
-Key columns:
+- PostgreSQL
+- pgAdmin 4
+- SQL
 
--   `order_id`
--   `customer_id`
--   `product`
--   `total_price`
--   `payment_method`
--   `referral_source`
--   `order_status`
+## 📂 Dataset
 
-## Business Questions Solved
+| Column | Description |
+|---------|-------------|
+| order_id | Unique order ID |
+| customer_id | Customer identifier |
+| product | Product name |
+| total_price | Order value |
+| payment_method | Payment type |
+| referral_source | Marketing source |
+| order_status | Current order status |
 
-### 1. Referral Source Performance
+## 📈 Business Questions
 
-Identify which marketing channel generated the most orders.
+- Referral source performance
+- Top 5 highest value orders
+- Online payment analysis
+- Average order value
+- Revenue by product
+- Order status distribution
 
-**Result**
+## 📊 Key Results
 
-  Referral Source     Orders
-  ----------------- --------
-  Instagram              259
-  Email                  250
-  Google                 241
-  Facebook               228
-  Referral               222
+### Referral Source Performance
 
-### 2. Top 5 Highest Value Orders
+| Referral Source | Orders |
+|----------------|------:|
+| Instagram | 259 |
+| Email | 250 |
+| Google | 241 |
+| Facebook | 228 |
+| Referral | 222 |
 
-Retrieve the highest revenue generating orders.
+### Revenue by Product
 
-**Insight:** The highest order value reached **3456.40**.
+| Product | Revenue |
+|---------|---------:|
+| Chair | 195620.11 |
+| Printer | 195612.61 |
+| Laptop | 192126.56 |
+| Tablet | 186568.95 |
+| Monitor | 175651.41 |
+| Desk | 167459.93 |
+| Phone | 151722.39 |
 
-### 3. Online Payment Analysis
+### Order Status
 
-Filter customers who paid using the **Online** payment method and rank
-them by purchase value.
+| Status | Orders |
+|--------|------:|
+| Cancelled | 250 |
+| Returned | 247 |
+| Pending | 237 |
+| Shipped | 235 |
+| Delivered | 231 |
 
-### 4. Average Order Value (AOV)
+## 💡 KPI
 
-**Average Order Value:** **1053.97**
+- **Average Order Value:** 1053.97
+- **Top Referral Source:** Instagram
+- **Highest Order Value:** 3456.40
+- **Highest Revenue Product:** Chair
 
-### 5. Revenue by Product
+## 🧠 SQL Concepts Used
 
-  Product       Revenue
-  --------- -----------
-  Chair       195620.11
-  Printer     195612.61
-  Laptop      192126.56
-  Tablet      186568.95
-  Monitor     175651.41
-  Desk        167459.93
-  Phone       151722.39
+`SELECT` `WHERE` `GROUP BY` `ORDER BY` `COUNT()` `SUM()` `AVG()` `ROUND()` `LIMIT`
 
-### 6. Order Status Distribution
-
-  Status        Orders
-  ----------- --------
-  Cancelled        250
-  Returned         247
-  Pending          237
-  Shipped          235
-  Delivered        231
-
-## SQL Concepts Used
-
--   SELECT
--   WHERE
--   GROUP BY
--   ORDER BY
--   COUNT()
--   SUM()
--   AVG()
--   ROUND()
--   LIMIT
-
-## Tools
-
--   PostgreSQL
--   pgAdmin 4
--   SQL
-
-## Project Outcome
-
-This project demonstrates practical SQL skills for data analysis by
-transforming raw transactional data into meaningful business insights.
-
-------------------------------------------------------------------------
-
-### Author
+## 👨‍💻 Author
 
 **Md. Raiful Islam Ratul**
 
-Aspiring Data Analyst \| SQL \| PostgreSQL \| Power BI
+Aspiring Data Analyst | SQL | PostgreSQL | Power BI
